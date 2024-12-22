@@ -1,0 +1,16 @@
+gcc -m32 -masm=intel -S main.c		 -- ver o codigo em masm 32
+
+////
+
+nasm -f elf32 main.asm -o main.o	 -- tem no makefile
+
+///
+
+gcc -m32 -no-pie main.o -o main		 -- transcrever o arquivo main
+
+//
+
+./main					 -- executar 
+
+
+
